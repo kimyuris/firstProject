@@ -4,7 +4,7 @@ public class ArrayExample6 {
 	public static void main(String[] args) {
 //	배열을 선언. 학생의 점수 scores
 //	평균점수와 가장 높은 점수를 구하고
-		int[] scores = { 90, 80, 84 };
+		int[] scores =new int[3]; //{ 90, 80, 84 };
 		scores[0] = 90;
 		scores[1] = 80;
 		scores[2] = 84;
@@ -22,7 +22,7 @@ public class ArrayExample6 {
 				maxValue = scores[i];
 			}
 			sum = sum + scores[i];
-			avg = (sum / 3);
+			avg = (sum / 3.0);
 		}
 		System.out.println("평균은 " + avg);
 		System.out.println("최고점수는 " + maxValue);
