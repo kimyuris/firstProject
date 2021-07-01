@@ -6,6 +6,30 @@ public class Student {
 	private int englishScore;
 	private int mathScore;
 
+	public Student() {
+
+	}
+
+	public Student(String name) { //매개값을 가지는 생성자.
+		this.name = name;
+	}
+
+	
+	public Student(String name, String year) {
+		this.name=name;
+		this.year=year;
+	}
+	
+	
+	
+	public Student(String name, String year, int englishScore, int mathScore) {
+		
+		this.name = name;
+		this.year = year;
+		this.englishScore = englishScore;
+		this.mathScore = mathScore;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -38,10 +62,4 @@ public class Student {
 		this.mathScore = mathScore;
 	}
 
-	
-	
-	
-	
-	
-	
 }
