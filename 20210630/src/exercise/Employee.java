@@ -1,13 +1,13 @@
 package exercise;
 
 public class Employee {
-	private int number;
-	private String name;
-	private String email;
-	private int money;
-	private String group;
+	private int employeeNumber;
+	private String employeeName;
+	private String employeeEmail;
+	private int employeeMoney;
+	private String employeeGroup;
 
-	public Employee(int number, String name, String email, int money, String group) {
+	public Employee(int employeeNumber, String employeeName, String employeeEmail, int employeeMoney, String employeeGroup) {
 		this.number = number;
 		this.name = name;
 		this.email = email;

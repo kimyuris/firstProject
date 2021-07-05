@@ -7,6 +7,13 @@ public class Member {
 	private String memberBirth;
 	private Gender memberGen;
 
+	public Member() {
+		this.memberId = 100;
+		this.memberName = "Hong";
+		this.memberPhone = "010";
+
+	}
+
 	public Member(int memberId, String memberName, String memberPhone, String memberBirth, Gender memberGen) {
 		super();
 		this.memberId = memberId;
@@ -14,6 +21,10 @@ public class Member {
 		this.memberPhone = memberPhone;
 		this.memberBirth = memberBirth;
 		this.memberGen = memberGen;
+	}
+
+	public Member(int memberId, String memberName, String memberPhone) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public int getMemberId() {
