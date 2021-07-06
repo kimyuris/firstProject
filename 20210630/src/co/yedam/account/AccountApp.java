@@ -160,7 +160,7 @@ public class AccountApp {
 					System.out.println(Integer.parseInt(amt) + "출금되었습니다.");
 					System.out.println("계좌 총 금액은 " + balance2 + "입니다.");
 				} 
-				//	}return ;
+			}return;
 	}
 	
 	}}
