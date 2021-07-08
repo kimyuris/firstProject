@@ -1,5 +1,7 @@
 package co.friend.view;
 
+import java.util.List;
+
 import co.friend.access.FriendAccess;
 import co.friend.access.FriendList;
 import co.friend.common.ScannerUtil;
@@ -49,10 +51,9 @@ public class FriendCliApp {
 		if (frt == null) {
 			System.out.println("조회결과가 없습니다.");
 		} else {
-			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println(frt);
-			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		}
 	}
 
@@ -62,14 +63,14 @@ public class FriendCliApp {
 		if (fr == null) {
 			System.out.println("조회결과가 없습니다.");
 		} else {
-			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println(fr);
-			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		}
 	}
 
 	public void list() {
-		Friend[] friendList = service.selectAll();
+		List<Friend> friendList = service.selectAll();
 		for (Friend friend : friendList) {
 			if (friend != null) {
 				System.out.println(friend.toString());
