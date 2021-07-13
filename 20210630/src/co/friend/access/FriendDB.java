@@ -2,8 +2,6 @@ package co.friend.access;
 
 import co.friend.model.Friend;
 
-// FriendAccess(인터페이스) 구현객체.
-// Datebase 저장.
 public class FriendDB implements FriendAccess {
 
 	@Override
